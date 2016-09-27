@@ -25,7 +25,7 @@ gulp.task('copy-rxjs', function () {
 });
 
 gulp.task('copy-app-styles', function () {
-    return gulp.src(['./node_modules/bootstrap/dist/css/bootstrap.min.css', './styles/app.css'])
+    return gulp.src(['./node_modules/bootstrap/dist/css/bootstrap.min.css', './src/styles/app.css'])
         .pipe(concat('all.css'))
         .pipe(gulp.dest('dist/app/renderer/styles'));
 });
